@@ -7,6 +7,8 @@ tellraw @s [{"translate":"np.quest.complete.hard","color":"light_purple"}]
 #give playcoins
 execute as @s run function coomer_core:quests/rewards/playcoins_hard
 
+#give combat merit
+execute as @s run function coomer_core:quests/rewards/merits/combat/combat_hard
 
 #give general extras
 execute as @s run function coomer_core:quests/global_rewards_hard

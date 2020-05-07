@@ -7,6 +7,8 @@ tellraw @s [{"translate":"np.quest.complete.easy","color":"green"}]
 #give playcoins
 tag @s add np_playcoin
 
+#give combat merit
+execute as @s run function coomer_core:quests/rewards/merits/combat/combat_easy
 
 #give general extras
 execute as @s run function coomer_core:quests/global_rewards_easy
