@@ -1,0 +1,55 @@
+{
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"weight": 1,
+			"name": "minecraft:enchanted_book",
+			"functions": [{
+				"function": "set_count",
+				"count": 1
+			}, {
+				"function": "set_nbt",
+				"tag": "{HideFlags:1,CustomModelData:2101,PCUUID:2101,np_salvageable:1b,np_id:\"np_balloon\",np_rarity:\"uncommon\",Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}]}"
+			}, {
+				"function": "set_name",
+				"name": {
+					"translate": "np.balloon.name",
+					"color": "green",
+					"italic": false
+				}
+			}, {
+				"function": "set_lore",
+				"lore": [
+					[{
+						"translate": "np.rarity.uncommon",
+						"color": "green",
+					"italic": false
+					}, {
+						"translate": "np.rarity.item",
+					"italic": false
+					}], {
+						"translate": "np.balloon.desc1",
+						"color": "gray",
+					"italic": false
+					}, {
+						"translate": "np.balloon.desc2",
+						"color": "gray",
+					"italic": false
+					}, {
+						"translate": "np.item.selfdestruct",
+						"color": "gray",
+					"italic": false,
+					"underlined": true
+					}, {
+						"translate": "np.item.salvageable",
+						"color": "gray",
+					"italic": false,
+					"underlined": true
+					}
+					
+				]
+			}]
+		}]
+	}]
+}

@@ -1,0 +1,7 @@
+
+scoreboard objectives remove easy_quest
+scoreboard objectives remove easy_quest_c
+scoreboard objectives remove med_quest
+scoreboard objectives remove med_quest_c
+scoreboard objectives remove hard_quest
+scoreboard objectives remove hard_quest_c

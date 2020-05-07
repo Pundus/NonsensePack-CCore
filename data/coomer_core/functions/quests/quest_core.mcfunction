@@ -1,0 +1,1 @@
+execute if score QuestCounter DailyTracker matches 300.. run function coomer_core:quests/quest_boot

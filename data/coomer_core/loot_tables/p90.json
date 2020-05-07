@@ -1,0 +1,49 @@
+{
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"weight": 1,
+			"name": "minecraft:crossbow",
+			"functions": [{
+				"function": "set_count",
+				"count": 1
+			}, {
+				"function": "set_nbt",
+				"tag": "{RepairCost:9999,PCUUID:2102,np_rarity:\"rare\",np_salvageable:1b,ChargedProjectiles:[{id:\"minecraft:tipped_arrow\",Count:1b,tag:{Potion:\"minecraft:water\",CustomPotionColor:1}}],Charged:1b,HideFlags:63,CustomModelData:2102,np_id:\"np_p90\"}"
+			}, {
+				"function": "set_name",
+				"name": {
+					"translate": "np.p90.name",
+					"color": "aqua",
+					"italic": false
+				}
+			}, {
+				"function": "set_lore",
+				"lore": [
+					[{
+						"translate": "np.rarity.rare",
+						"color": "aqua",
+					"italic": false
+					}, {
+						"translate": "np.rarity.weapon",
+					"italic": false
+					}], {
+						"translate": "np.p90.desc1",
+						"color": "gray",
+					"italic": false
+					}, {
+						"translate": "np.p90.desc2",
+						"color": "gray",
+					"italic": false
+					}, {
+						"translate": "np.item.salvageable",
+						"color": "gray",
+					"italic": false,
+					"underlined": true
+					}
+				]
+			}]
+		}]
+	}]
+}

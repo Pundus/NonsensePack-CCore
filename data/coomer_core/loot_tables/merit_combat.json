@@ -1,0 +1,49 @@
+{
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"weight": 1,
+			"name": "minecraft:white_dye",
+			"functions": [{
+				"function": "set_count",
+				"count": 1
+			}, {
+				"function": "set_nbt",
+				"tag": "{HideFlags:1,CustomModelData:2100,PCUUID:2100,np_id:\"np_playcoin\",np_rarity:\"common\",Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}]}"
+			}, {
+				"function": "set_name",
+				"name": {
+					"translate": "np.playcoin.name",
+					"color": "white",
+					"italic": false
+				}
+			}, {
+				"function": "set_lore",
+				"lore": [
+					[{
+						"translate": "np.rarity.common",
+						"color": "white",
+					"italic": false
+					}, {
+						"translate": "np.rarity.currency",
+					"italic": false
+					}], {
+						"translate": "np.playcoin.desc1",
+						"color": "gray",
+					"italic": false
+					}, {
+						"translate": "np.playcoin.desc2",
+						"color": "gray",
+					"italic": false
+					}, {
+						"translate": "np.playcoin.desc3",
+						"color": "gray",
+					"italic": false,
+					"underlined": true
+					}
+				]
+			}]
+		}]
+	}]
+}

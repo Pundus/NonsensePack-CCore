@@ -1,0 +1,54 @@
+{
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"weight": 1,
+			"name": "minecraft:enchanted_book",
+			"functions": [{
+				"function": "set_count",
+				"count": 1
+			}, {
+				"function": "set_nbt",
+				"tag": "{np_salvageable:1b,HideFlags:1,PCUUID:2104,np_rarity:\"rare\",CustomModelData:2104,np_id:\"np_coomermix\",Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}]}"
+			}, {
+				"function": "set_name",
+				"name": {
+					"translate": "np.coomermix.name",
+					"color": "aqua",
+					"italic": false
+				}
+			}, {
+				"function": "set_lore",
+				"lore": [
+					[{
+						"translate": "np.rarity.rare",
+						"color": "aqua",
+					"italic": false
+					}, {
+						"translate": "np.rarity.item",
+					"italic": false
+					}], {
+						"translate": "np.coomermix.desc1",
+						"color": "gray",
+					"italic": false
+					}, {
+						"translate": "np.coomermix.desc2",
+						"color": "gray",
+					"italic": false
+					}, {
+						"translate": "np.item.selfdestruct",
+						"color": "gray",
+					"italic": false,
+					"underlined": true
+					}, {
+						"translate": "np.item.salvageable",
+						"color": "gray",
+					"italic": false,
+					"underlined": true
+					}
+				]
+			}]
+		}]
+	}]
+}
