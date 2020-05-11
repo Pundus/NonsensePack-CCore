@@ -7,4 +7,5 @@ execute as @a[tag=Guardsman] at @s run tp @s ~ ~ ~ facing entity @a[tag=!Guardsm
 function coomer_core:p90
 function coomer_core:bmgun
 function coomer_core:bmet
+function coomer_core:augments/spawn_guns
 

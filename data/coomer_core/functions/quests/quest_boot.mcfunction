@@ -10,9 +10,9 @@ scoreboard players set * CurrentQ_hard 0
 bossbar remove questor:easy
 bossbar remove questor:med
 bossbar remove questor:hard
-bossbar add questor:easy {"translate":"np.quest.current","color":"green"}
-bossbar add questor:med {"translate":"np.quest.current","color":"aqua"}
-bossbar add questor:hard {"translate":"np.quest.current","color":"light_purple"}
+
+
+
 
 
 
@@ -21,8 +21,8 @@ bossbar add questor:hard {"translate":"np.quest.current","color":"light_purple"}
 function coomer_core:quests/quest_purge
 
 #Get the RNG
-schedule function coomer_core:quests/quest_initialize_easy 1t
-schedule function coomer_core:quests/quest_initialize_med 2t
-schedule function coomer_core:quests/quest_initialize_hard 3t
+schedule function coomer_core:quests/quest_initialize_easy 30t
+schedule function coomer_core:quests/quest_initialize_med 20t
+schedule function coomer_core:quests/quest_initialize_hard 10t
 
 scoreboard players set QuestCounter DailyTracker 0

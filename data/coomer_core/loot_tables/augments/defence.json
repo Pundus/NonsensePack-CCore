@@ -1,0 +1,50 @@
+{
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"weight": 1,
+			"name": "minecraft:bow",
+			"functions": [{
+				"function": "set_count",
+				"count": 1
+			}, {
+				"function": "set_nbt",
+				"tag": "{HideFlags:1,RepairCost:9999,Unbreakable:1b,CustomModelData:92101,PCUUID:92110,np_augment:1b,np_id:\"augment_defence\",np_rarity:\"epic\",Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:punch\",lvl:2s},{id:\"minecraft:infinity\",lvl:1s}]}"
+			}, {
+				"function": "set_name",
+				"name": {
+					"translate": "np.augment.item.defence",
+					"color": "gold",
+					"italic": false
+				}
+			}, {
+				"function": "set_lore",
+				"lore": [
+					[{
+						"translate": "np.rarity.epic",
+						"color": "gold",
+					"italic": false
+					}, {
+						"translate": "np.rarity.item",
+					"italic": false
+					}], {
+						"translate": "np.augment.desc.defence",
+						"color": "gray",
+					"italic": false
+					}, {
+						"translate": "np.augment.desc.defence.2",
+						"color": "gray",
+					"italic": false
+					}, {
+						"translate": "np.item.selfdestruct",
+						"color": "gray",
+					"italic": false,
+					"underlined": true
+					}
+					
+				]
+			}]
+		}]
+	}]
+}

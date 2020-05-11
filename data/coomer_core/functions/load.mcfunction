@@ -20,9 +20,15 @@ setblock 3 1 3 minecraft:repeating_command_block keep
 schedule function coomer_core:clock 1t
 #######schedule function coomer_core:clock/days 86400s
 
+#augments
+schedule function coomer_core:augments_root 10t
+schedule function coomer_core:augments/augments_fx 5t
+
+
 #items
 schedule function coomer_core:items_handler 2t
 schedule function coomer_core:merits_handler 8t
+schedule function coomer_core:augments_give_handler 9t
 
 #unique items
 schedule function coomer_core:balloon 3t
