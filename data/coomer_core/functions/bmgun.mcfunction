@@ -23,9 +23,9 @@ execute as @a[nbt={SelectedItem:{tag:{np_id:"np_bmgun",Charged:0b}}}] if score @
 
 
 execute as @a[nbt={SelectedItem:{tag:{np_id:"np_bmgun",Charged:0b}}},nbt=!{SelectedItem:{tag:{Damage:321}}}] run data modify block -1 0 -1 Items[0].tag.ChargedProjectiles append value {id:"minecraft:tipped_arrow",Count:1b,tag:{Potion:"minecraft:water",CustomPotionColor:2}}
-execute as @a[nbt={SelectedItem:{tag:{np_id:"np_bmgun",Charged:0b}}},nbt=!{SelectedItem:{tag:{Damage:321}}}] store result score @s BMGunDmgTrack run data get block -1 0 -1 Items[0].tag.Damage
-execute as @a[gamemode=!creative,nbt={SelectedItem:{tag:{np_id:"np_bmgun",Charged:0b}}},nbt=!{SelectedItem:{tag:{Damage:0}}}] run scoreboard players add @s BMGunDmgTrack 19
-execute as @a[gamemode=!creative,nbt={SelectedItem:{tag:{np_id:"np_bmgun",Charged:0b}}},nbt=!{SelectedItem:{tag:{Damage:0}}}] run execute store result block -1 0 -1 Items[0].tag.Damage int 1 run scoreboard players get @s BMGunDmgTrack
+##execute as @a[nbt={SelectedItem:{tag:{np_id:"np_bmgun",Charged:0b}}},nbt=!{SelectedItem:{tag:{Damage:321}}}] store result score @s BMGunDmgTrack run data get block -1 0 -1 Items[0].tag.Damage
+#execute as @a[gamemode=!creative,nbt={SelectedItem:{tag:{np_id:"np_bmgun",Charged:0b}}},nbt=!{SelectedItem:{tag:{Damage:0}}}] run scoreboard players add @s BMGunDmgTrack 19
+#execute as @a[gamemode=!creative,nbt={SelectedItem:{tag:{np_id:"np_bmgun",Charged:0b}}},nbt=!{SelectedItem:{tag:{Damage:0}}}] run execute store result block -1 0 -1 Items[0].tag.Damage int 1 run scoreboard players get @s BMGunDmgTrack
 execute as @a[nbt={SelectedItem:{tag:{np_id:"np_bmgun",Charged:0b}}},nbt=!{SelectedItem:{tag:{Damage:321}}}] run data modify block -1 0 -1 Items[0].tag.Charged set value 1b
 execute as @a[nbt={SelectedItem:{tag:{np_id:"np_bmgun",Charged:0b}}},nbt=!{SelectedItem:{tag:{Damage:321}}}] at @s run playsound minecraft:shell player @a ~ ~ ~ 0.25 1 0.0
 execute as @a[nbt={SelectedItem:{tag:{np_id:"np_bmgun",Charged:0b}}},nbt=!{SelectedItem:{tag:{Damage:321}}}] run function pc_root:player_inv_modifier/retrieve/retrieve_mainhand
@@ -56,7 +56,7 @@ scoreboard players reset @a[nbt=!{Inventory:[{Slot:-106b,tag:{np_id:"np_bmgun"}}
 
 execute as @e[type=arrow,nbt={Potion:"minecraft:water",Color:2}] at @s run data modify entity @s NoGravity set value 1b
 execute as @e[type=arrow,nbt={Potion:"minecraft:water",Color:2}] at @s run data modify entity @s crit set value 0b
-execute as @e[type=arrow,nbt={Potion:"minecraft:water",Color:2}] at @s run data modify entity @s damage set value 0.75d
+execute as @e[type=arrow,nbt={Potion:"minecraft:water",Color:2}] at @s run data modify entity @s damage set value 0.25d
 execute as @e[type=arrow,nbt={Potion:"minecraft:water",Color:2}] at @s run data modify entity @s Color set value -1
 
 
